@@ -1,4 +1,4 @@
-name: WordPress Docker Build and Push
+name: Build and Push Docker Image
 
 on:
   push:
@@ -21,6 +21,6 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin docker.pkg.github.com
-        docker build -t docker.pkg.github.com/${{ github.repository }}/angular-strapi-v5:latest .
-        docker push docker.pkg.github.com/${{ github.repository }}/angular-strapi-v5:latest
+        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        docker build -t darigo/angular-strapi:version1 .
+        docker push darigo/angular-strapi:version1
