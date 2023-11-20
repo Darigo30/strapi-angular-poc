@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - master
+      - master  
 
 jobs:
   build:
@@ -13,8 +13,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-docker@v3
+    - name: Set up Docker
+      uses: docker/setup-docker@latest
 
     - name: Build and push Docker image
       env:
