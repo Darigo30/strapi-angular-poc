@@ -1,0 +1,26 @@
+<!-- Creamos carrusel con angular bootstrap -->
+<ngb-carousel *ngIf="slider">
+    <ng-template ngbSlide *ngFor="let item of slider" class="uc-primary-carousel--text-centered">
+      <div class="primary-carousel_item">
+        <div class="uc-hero">
+          <img [src]="item.urlImg" alt="Random first slide" class="uc-hero__bg-img">
+          <div class="uc-hero__dark-gradient"></div>
+        </div>
+        <div class="uc-hero__content uc-hero__content--center uc-hero__text--center carousel-caption">
+          <div class="col-lg-8">
+            <h1 class="color-white my-20">
+              {{item.nombres }}
+            </h1>
+            <p class="mb-28 color-white d-none d-lg-block">
+              {{ item.bajada }}
+            </p>
+            <a href="#" class="uc-btn btn-inline">
+                <span class="color-white">Ver más</span>
+                <i class="uc-icon icon-shape--rounded">arrow_forward</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+</ngb-carousel>
+  

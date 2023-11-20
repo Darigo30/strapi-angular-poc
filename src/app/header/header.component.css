@@ -1,0 +1,17 @@
+.uc-navbar .uc-navbar_nav {
+    justify-content: start;
+}
+.uc-navbar .uc-navbar_nav .nav-item {
+    flex-grow: 0;
+    padding: 1px 20px;
+}
+.cerrar-ses {
+    color: #0176DE !important;
+    text-decoration: none;
+    font-weight: normal;
+}
+.inisesi {
+    color: #707070;
+    font-weight: bold;
+    padding: 0 18px !important;
+}

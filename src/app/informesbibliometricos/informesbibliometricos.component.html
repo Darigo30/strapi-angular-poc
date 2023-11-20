@@ -1,0 +1,12 @@
+<div class="uc-card" style="height: 400px" *ngIf="textoApiInforme">
+    <div class="uc-card_body">
+        <h3 class="h4">{{textoApiInforme.attributes.Titulo}}</h3>
+        <div class="uc-text-divider divider-primary my-12"></div>
+        <p class="no-margin">{{textoApiInforme.attributes.Texto}}</p>
+        <div class="text-right mt-auto">
+            <a href="#" class="uc-btn btn-inline">Descargar<i class="uc-icon" style="font-size: 25px;">download_for_offline</i></a>
+            <!-- {{ textoApiInforme.descargar }} -->
+        </div>
+    </div>
+</div>
+
