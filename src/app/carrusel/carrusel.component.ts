@@ -16,7 +16,7 @@ export class CarruselComponent implements OnInit {
     this.ApisService.getStrapiSlider().then((dataStrapiSliders) => {
       dataStrapiSliders.data.forEach((element: any) => {
         element.attributes.Imagen.data.forEach((foto: any) => {
-          let urlImg = "http://localhost:1337" + foto.attributes.url;
+          let urlImg = "http://146.155.28.129" + foto.attributes.url;
             this.slider.push({
               nombres: element.attributes.Titulo,
               bajada : element.attributes.Bajada,
