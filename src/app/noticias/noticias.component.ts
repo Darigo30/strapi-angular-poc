@@ -18,7 +18,7 @@ export class NoticiasComponent implements OnInit {
       dataStrapiNoticias.data.forEach((element: any) => {
         const titNoticia = element.attributes.Titulo;
         element.attributes.Imagennoticia.data.forEach((foto: any) => {
-          let urlImg = "http://146.155.28.129" + foto.attributes.url;
+          let urlImg = "http://146.155.28.129:8000" + foto.attributes.url;
           this.noticiaArray.push({
             titulo: titNoticia,
             urlImg: urlImg  
