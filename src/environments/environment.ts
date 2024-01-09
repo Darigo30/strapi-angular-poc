@@ -1,3 +1,4 @@
+//Variables de entorno
 export const environment = {
     production: true,
     apiUrlSliders: 'http://146.155.28.129/api/sliders?populate=*',
