@@ -23,6 +23,7 @@ export class ApisService {
       }
     }
     const responseSliders = await axios.get(environment.apiUrlSliders, conf);
+    console.log("responseSlider", responseSliders);
     try {
       const dataStrapiSliders = responseSliders.data;
       return dataStrapiSliders;
