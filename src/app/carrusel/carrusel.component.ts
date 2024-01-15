@@ -18,7 +18,7 @@ export class CarruselComponent implements OnInit {
       dataStrapiSliders.data.forEach((element: any) => {
         element.attributes.Imagen.data.forEach((foto: any) => {
           let urlImg = environment.urlBase + foto.attributes.url;
-          console.log("urlImg", urlImg, "completo", environment.urlBase + foto.attributes.url);
+          console.log("urlImg", urlImg);
             this.slider.push({
               nombres: element.attributes.Titulo,
               bajada : element.attributes.Bajada,
